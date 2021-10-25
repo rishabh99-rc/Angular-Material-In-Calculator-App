@@ -1,0 +1,59 @@
+<div class="back">
+<mat-toolbar>
+	<span>
+	</span>
+	<div class="card">
+		<mat-card>
+			<i> My Calculator </i>
+		</mat-card>
+	</div>
+	<div class="car">
+		<mat-card>
+			<i> Calculator app made using Angular Material </i>
+		</mat-card>
+	</div>
+</mat-toolbar>
+<section>
+	<div class="example-button-row">
+		<a mat-button color="accent" href="https://github.com/aniketgautam3"
+			target="https://github.com/aniketgautam3">Open GitHub</a>
+	</div>
+</section>
+<div class="home">
+	<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+	<br>
+</div>
+<div class="container">
+	<div class="main">
+		<div class="Header">
+			<h1>Calculator App</h1>
+		</div>
+
+		<div class="input_container">
+			<input type="number" name="n1" [(ngModel)]="n1">
+			<input type="number" name="n2" [(ngModel)]="n2">
+		</div>
+
+		<div class="button_container">
+			<button class="btn" (click)="add()">Addition</button>
+			<button class="btn" (click)="sub()">Subtraction</button>
+			<button class="btn" (click)="mul()">Multiplication</button>
+		</div>
+		<div class="button_container">
+			<button class="btn" (click)="divi()">Division</button>
+			<button class="btn" (click)="fac()">Factorial</button>
+			<button class="btn" (click)="prime()">Prime Checker</button>
+		</div>
+
+		<div class="ans">
+			<div>
+				Result:
+			</div>
+			<div>
+				{{!n5 ? n3 : n4}}
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<router-outlet></router-outlet>
